@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277.84 280.54">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: AndaleMono, 'Andale Mono';
+        font-size: 94.81px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <circle class="cls-2" cx="139.07" cy="139.77" r="134.35"/>
+  <circle class="cls-2" cx="139.07" cy="139.77" r="122.36"/>
+  <text class="cls-1" transform="translate(110.28 170.63)"><tspan x="0" y="0">C</tspan></text>
+  <line class="cls-3" x1="134.56" y1="83.76" x2="134.56" y2="191.91"/>
+  <line class="cls-3" x1="143.34" y1="83.76" x2="143.34" y2="191.91"/>
+</svg>
