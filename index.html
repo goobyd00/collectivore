@@ -4,6 +4,11 @@
         <title>*COLLECTIVORE*</title>
         <link rel="stylesheet" href="main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+
     </head>
 
     <body>
@@ -28,8 +33,8 @@
                                             <img src="../collectivore/images/coin.svg" class="ui-widget-content" id="draggable" alt="coin">
                                         </div>
                                     </div>
-                                    <div class="slot"> 
-                                        <img src="../collectivore/images/slot.svg" class="ui-widget-header" id="droppable" alt="slot">
+                                    <div class="slot" id="droppable"> 
+                                        <img src="../collectivore/images/slot.svg" class="ui-widget-header" alt="slot">
                                     </div>
                                 </div>
                                
@@ -39,8 +44,8 @@
                         <div class="box2">
                             <div class="number2">2.crank
                                 <div class="position-crank">
-                                    <div class="crank"> 
-                                        <img src="../collectivore/images/crank.svg" class="spin-on-hover" alt="crank">
+                                    <div class="crank inactive"> 
+                                        <img src="../collectivore/images/crank.svg"  alt="crank">
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +54,7 @@
                         <div class="box3">
                             <div class="number3">3.launch
                                 <div class="double2">
-                                    <div class="go">
+                                    <div class="go inactive">
                                         <img src="../collectivore/images/go.svg" alt="go!">
                                     </div>
                                     <div class="light-border">
@@ -60,10 +65,17 @@
                         </div>
                     </div>
                 </div>
+
+
+                <audio id="coin-drop" src="../collectivore/sounds/coin-drop.mp3"></audio>
+                <audio id="cranked" src="../collectivore/sounds/crank.mp3"></audio>
+                <audio id="bootup" src="../collectivore/sounds/bootup.mp3"></audio>
+
+
                 <div class="bottom-container">
                     <div class="bottom-items">
-                        <div class="bottom-appear-container">
-                            <div class="cat-intro">Collectivore has 4 different categories available for your exploration.</div>
+                        <div class="bottom-appear-container bottom-inactive">
+                            <div class="cat-intro">Collectivore has 4 different categories available for collection.</div>
                             <div class="categories">
 
                                 <a href="../collectivore/timeblend-trinkets.html" class="no-underline">
@@ -102,7 +114,7 @@
                                     Artisan's Muse
                                     <br>
                                     <br>
-                                    A gallery of crafted treasures, celebrating the artistry behind each piece.
+                                    A gallery of crafted treasures, highlighting the artistry behind each piece.
                                 </div>
                                 </a>
                                     
