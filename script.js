@@ -72,10 +72,98 @@ $(".artisan-cap").click(function() {
 
 // RANDOM LIST
 // ---------------------------------------------
-var random = document.querySelector('.random');
-for (var i = random.children.length; i >= 0; i--) {
-  random.appendChild(random.children[Math.random() * i | 0]);
-}
+$(document).ready(function() {
+  $('#nature-mystery').click(function() {
+      var zipFiles = [
+          'NV-1.zip',
+          'NV-2.zip',
+          'NV-3.zip',
+          'NV-4.zip',
+          'NV-5.zip'
+      ];
+
+      var randomIndex = Math.floor(Math.random() * zipFiles.length);
+      var randomFile = zipFiles[randomIndex];
+
+      var link = $('<a>')
+          .attr('href', randomFile)
+          .attr('download', randomFile.substr(randomFile.lastIndexOf('/') + 1))
+          .appendTo('body');
+
+      link[0].click();
+      link.remove();
+  });
+});
+
+$(document).ready(function() {
+  $('#time-mystery').click(function() {
+      var zipFiles = [
+          'TT-1.zip',
+          'TT-2.zip',
+          'TT-3.zip',
+          'TT-4.zip',
+          'TT-5.zip'
+      ];
+
+      var randomIndex = Math.floor(Math.random() * zipFiles.length);
+      var randomFile = zipFiles[randomIndex];
+
+      var link = $('<a>')
+          .attr('href', randomFile)
+          .attr('download', randomFile.substr(randomFile.lastIndexOf('/') + 1))
+          .appendTo('body');
+
+      link[0].click();
+      link.remove();
+  });
+});
+
+$(document).ready(function() {
+  $('#inno-mystery').click(function() {
+      var zipFiles = [
+          'IO-1.zip',
+          'IO-2.zip',
+          'IO-3.zip',
+          'IO-4.zip',
+          'IO-5.zip'
+      ];
+
+      var randomIndex = Math.floor(Math.random() * zipFiles.length);
+      var randomFile = zipFiles[randomIndex];
+
+      var link = $('<a>')
+          .attr('href', randomFile)
+          .attr('download', randomFile.substr(randomFile.lastIndexOf('/') + 1))
+          .appendTo('body');
+
+      link[0].click();
+      link.remove();
+  });
+});
+
+$(document).ready(function() {
+  $('#artisan-mystery').click(function() {
+      var zipFiles = [
+          'AM-1.zip',
+          'AM-2.zip',
+          'AM-3.zip',
+          'AM-4.zip',
+          'AM-5.zip'
+      ];
+
+      var randomIndex = Math.floor(Math.random() * zipFiles.length);
+      var randomFile = zipFiles[randomIndex];
+
+      var link = $('<a>')
+          .attr('href', randomFile)
+          .attr('download', randomFile.substr(randomFile.lastIndexOf('/') + 1))
+          .appendTo('body');
+
+      link[0].click();
+      link.remove();
+  });
+});
+
 
 
 
